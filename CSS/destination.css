@@ -1,0 +1,405 @@
+body {
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+}
+
+/* Main Begins */
+
+main {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 3%;
+}
+
+main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6vh;
+}
+
+main .left img {
+    height: 85%;
+    width: 85%;
+    transition: 1s;
+}
+
+main .left img:hover {
+    scale: 1.1;
+}
+
+main .right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2vh;
+}
+
+
+main .right nav {
+    height: 9vh;
+    width: 70%;
+}
+
+main .right nav ul {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+main .right nav li a {
+    cursor: pointer;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+main .right nav ul li a:hover {
+    font-size: 1.1rem;
+    padding: 14px 5px;
+    border-bottom: 3px solid #969494;
+    border-radius: 2px;
+}
+
+main .right h2 {
+    font-family: 'Croissant One', cursive;
+    font-size: 7rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+main .right>p {
+    color: #d8d8d8;
+    font-size: 1rem;
+    width: 80%;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #969494;
+    border-radius: 2px;
+    font-family: 'Croissant One', cursive;
+}
+
+main .right .details {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main .right .details p {
+    text-transform: uppercase;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+main .right .details span {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/* Main Ends */
+
+/* Responsive Design Begins */
+
+@media (width<=1035px) {
+    main {
+        margin-top: 8%;
+        padding: 5% 3% 1%;
+    }
+
+    main .left img {
+        height: 80%;
+        width: 80%;
+    }
+
+    main .right {
+        gap: 1vh;
+    }
+
+    main .right nav ul {
+        width: 100%;
+    }
+
+    main .right h2 {
+        font-size: 5rem;
+    }
+
+    main .right>p {
+        padding-bottom: 1.8rem;
+        line-height: 1.2rem;
+        width: 85%;
+    }
+
+}
+
+
+@media (width<=850px) {
+    main {
+        margin-top: 10%;
+    }
+
+    main .activePage h3 {
+        font-size: 1.4rem;
+    }
+
+    main .left img {
+        height: 75%;
+        width: 75%;
+    }
+
+    main .right nav {
+        width: 80%;
+    }
+
+    main .right>p {
+        font-size: 0.9rem;
+        width: 95%;
+    }
+
+    main .right .details span {
+        letter-spacing: 3px;
+        font-size: 18px;
+    }
+}
+
+/* Tablet */
+
+@media (width<=795px) {
+    body {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 3%;
+        gap: 1.8vh;
+    }
+
+    main .activePage {
+        position: absolute;
+        top: 15%;
+        left: 3%;
+    }
+
+    main .left img {
+        height: 70%;
+        width: 70%;
+    }
+
+    main .left img:hover {
+        scale: none;
+    }
+
+    main .right {
+        align-items: center;
+        width: 60%;
+        gap: 0;
+    }
+
+    main .right>p {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    main .right .details {
+        text-align: center;
+    }
+
+    main .right .details p {
+        margin-bottom: 7px;
+    }
+
+    main .right .details span {
+        font-size: 20px;
+    }
+}
+
+@media (width<=768px) {
+
+    main .activePage {
+        top: 12%;
+    }
+
+    main .left img {
+        height: 66%;
+        width: 66%;
+    }
+
+    main .right h2 {
+        font-size: 4.5rem;
+    }
+
+    main .right>p {
+        font-size: 0.85rem;
+        width: 115%;
+    }
+
+    main .right .details p {
+        font-size: 13px;
+    }
+
+    main .right .details span {
+        font-size: 16px;
+    }
+}
+
+@media (width<=650px) {
+
+    main {
+        padding-bottom: 1%;
+    }
+
+    main .left img {
+        height: 65%;
+        width: 65%;
+    }
+
+    main .right h2 {
+        font-size: 4.2rem;
+    }
+
+    main .right>p {
+        width: 130%;
+    }
+}
+
+@media (width<=605px) {
+    main .left img {
+        height: 60%;
+        width: 60%;
+    }
+
+    main .right h2 {
+        font-size: 4.1rem;
+    }
+
+    main .right .details {
+        width: 100%;
+    }
+}
+
+@media (width<=570px) {
+    main .right>p {
+        font-size: 0.8rem;
+    }
+
+    main .right .details p {
+        margin-bottom: 5px;
+    }
+}
+
+@media (width<=550px) {
+    main .left img {
+        height: 55%;
+        width: 55%;
+    }
+
+    main .activePage h3 {
+        font-size: 1.2rem;
+    }
+
+    main .right h2 {
+        font-size: 4rem;
+    }
+
+    main .right>p {
+        width: 140%;
+    }
+}
+
+@media (width<=501px) {
+    main .left img {
+        height: 50%;
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    main .right h2 {
+        font-size: 3.6rem;
+    }
+
+    main .right>p {
+        width: 150%;
+    }
+}
+
+/* Mobile*/
+
+@media (width<=460px) {
+    body {
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
+
+    main {
+        margin-top: 13%;
+    }
+
+    main .activePage {
+        top: 4%;
+        left: auto;
+    }
+
+    main .left img {
+        height: 55%;
+        width: 55%;
+    }
+
+    main .right .details {
+        width: 120%;
+    }
+}
+
+@media (width<=375px) {
+    main {
+        margin-top: 15%;
+    }
+
+    main .right nav {
+        width: 100%;
+    }
+
+    main .right h2 {
+        font-size: 3.5rem;
+    }
+
+}
+
+@media (width<=365px) {
+    main {
+        margin-top: 20%;
+    }
+
+    main .activePage {
+        top: 10%;
+    }
+
+    main .right h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (width<=335px) {
+    main {
+        margin-top: 25%;
+    }
+
+    main .activePage {
+        top: 10%;
+    }
+
+    main .right h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Responsive Design Ends  */

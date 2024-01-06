@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: no-repeat center;
+    background-size: cover;
+    transition: 6s;
+}
+
+main {
+    transition: 1.5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 6% 3%;
+}
+
+/* Header Begins */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    padding-left: 5%;
+    z-index: 999;
+}
+
+header .logo a img {
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+header .logo a :hover {
+    scale: 1.3;
+    box-shadow: 10px 10px 100px #ffffffbc;
+}
+
+header .line {
+    position: absolute;
+    width: 43%;
+    height: 1.25px;
+    border-radius: 1px;
+    background-color: #848484;
+    margin-left: 5%;
+}
+
+header .hamburger,
+header .hamburger .close {
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+header nav {
+    height: 9vh;
+    width: 50%;
+    border-radius: 5px;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+header nav ul {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.3s;
+}
+
+header nav ul li {
+    transition: 0.3s;
+}
+
+header nav ul li:hover {
+    scale: 1.1;
+}
+
+.active {
+    border-bottom: 2.2px solid #fff;
+    transition: 0.3s;
+    border-radius: 2px;
+    padding: 13px 0;
+}
+
+.active:hover {
+    border-bottom: 2.2px solid #969494;
+}
+
+header nav ul li a {
+    letter-spacing: 1.2px;
+    font-family: 'Croissant One', cursive;
+    padding: 14px 0;
+    font-size: 2.4vh;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid #969494;
+    border-radius: 2px;
+}
+
+header nav ul li a span {
+    font-size: 2.8vh;
+}
+
+/* Header Ends */
+
+/* Main Begins */
+
+main .activePage h3 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+main .activePage h3 span {
+    color: #969494;
+    font-weight: 500;
+}
+
+/* Main Ends */
+
+/* Responsive Design Begins */
+
+@media (width<=1151px) {
+    header nav {
+        width: 55vw;
+    }
+
+    header .line {
+        width: 35%;
+    }
+
+    header nav ul li {
+        margin-right: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 2.2vh;
+    }
+}
+
+@media (width<=960px) {
+    header nav ul {
+        width: 100%
+    }
+
+    header nav ul li a {
+        font-size: 2vh;
+    }
+}
+
+/* Tablet Design */
+
+@media (width<=795px) {
+
+    header {
+        top: 0px;
+        padding: 2% 0% 0% 3%;
+    }
+
+    header .line {
+        display: none;
+    }
+
+    header nav {
+        height: 10vh;
+        width: 60%;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    header nav ul li a {
+        font-size: 2.2vh;
+    }
+
+    header nav ul li a span {
+        display: none;
+    }
+}
+
+@media (width<=700px) {
+
+    header nav {
+        width: 65%;
+    }
+}
+
+@media (width<=575px) {
+
+    header nav {
+        width: 70%;
+    }
+}
+
+@media (width<=550px) {
+
+    header nav {
+        width: 80%;
+    }
+}
+
+/* Mobile Design */
+
+@media (width<=460px) {
+
+    header {
+        padding: 3.5%;
+        transition: none;
+    }
+
+    header .logo img {
+        scale: 0.9;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 60vw;
+        border-radius: 0;
+        padding: 1.5vh 1.5vh 0;
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+        padding-top: 10vh;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        display: inline-flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 45%;
+    }
+
+    header nav ul li a span {
+        display: inline;
+    }
+}
+
+/* Responsive Design Ends */
